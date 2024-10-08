@@ -1,0 +1,11 @@
+spec:
+  inputs:
+    username:
+---
+
+stages:
+  - printUsername
+
+print:
+  stage: printUsername
+  script: echo "Hello $[[inputs.username]]"
